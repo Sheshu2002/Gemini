@@ -2,6 +2,7 @@ import React, { useContext } from "react";
 import "./Main.css";
 import { assets } from "../../assets/assets";
 import { Context } from "../../Context/Context";
+
 function Main() {
   const {
     onSent,
@@ -16,7 +17,7 @@ function Main() {
   return (
     <div className="main">
       <div className="nav">
-        <p>Salaar.AI</p>
+        <img id="salaar" src={assets.salaarlogo} alt="" />
         <img src={assets.user_icon} alt="" />
       </div>
       <div className="main-container">
@@ -83,7 +84,9 @@ function Main() {
           <div>
             <img src={assets.gallery_icon} alt="" />
             <img src={assets.mic_icon} alt="" />
-            {input && <img onClick={() => onSent()} src={assets.send_icon} alt="" /> }
+            {input && (
+              <img onClick={() => onSent()} src={assets.send_icon} alt="" />
+            )}
           </div>
         </div>
         <p className="bottom-info">

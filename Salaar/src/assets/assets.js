@@ -15,6 +15,7 @@ import send_icon from './send_icon.png'
 import gemini_icon from './gemini_icon.png'
 import aiicon from './aiicon.jpeg'
 import salaarback from './salaarback.jpeg';
+import salaarlogo from './salaarlogo.png';
 export const assets = {
     history_icon,
     aiicon,
@@ -32,5 +33,6 @@ export const assets = {
     code_icon,
     send_icon,
     gemini_icon,
-    salaarback
+    salaarback,
+    salaarlogo
 }

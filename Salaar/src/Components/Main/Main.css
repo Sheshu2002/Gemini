@@ -70,8 +70,8 @@
 
 .main-bottom {
   position: absolute;
-  left: 140px;
   bottom: 0;
+  left: 12%;
   width: 100%;
   max-width: 900px;
   padding: 0px 20px;
@@ -112,7 +112,7 @@
 }
 .result {
   padding: 0px 5%;
-  max-height: 70vh;
+  max-height: 60vh;
   overflow-y: scroll;
 }
 .result::-webkit-scrollbar {
@@ -158,8 +158,35 @@
   }
 }
 
-.result-data p{
-    font-size: 17px;
-    font-weight: 300;
-    line-height: 1.8;
+.result-data p {
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.8;
+}
+
+@media screen and (max-width: 600px) {
+  .main-bottom input {
+    flex: none;
+    width: 150px;
+  }
+  .main-bottom img {
+    width: 20px;
+  }
+  .search-box {
+    padding: 5px 10px;
+  }
+  .search-box div {
+    gap: 5px;
+  }
+  .main-bottom {
+    left: 0%;
+  }
+  .result{
+    max-height: 75vh;
+  }
+}
+#salaar{
+  width: 6rem;
+  border-radius: 0;
+  height: 3rem;
 }
